@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/css/style.css">
+  <title>Регистрация и Авторизация</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container" id="login-form">
+        <button onclick="authorizeWithGoogle()">Регистрация через Google</button>
+
+      <h2>Вход</h2>
+      <input type="text" id="login-username" placeholder="Имя пользователя">
+      <input type="password" id="login-password" placeholder="Пароль">
+      <button onclick="login()">Войти</button>
+    </div>
+    <div class="form-container" id="register-form">
+      <h2>Регистрация</h2>
+      <input type="text" id="register-username" placeholder="Имя пользователя">
+      <input type="password" id="register-password" placeholder="Пароль">
+      <button onclick="register()">Зарегистрироваться</button>
+    </div>
+    <div class="form-container" id="welcome-message" style="display: none;"></div>
+    <button id="logout-btn" style="display: none;" onclick="logout()">Выйти</button>
+  </div>
+  <div id="popup-message" class="popup-message"></div>
+  <script src="/js/script.js"></script>
+</body>
+</html>
